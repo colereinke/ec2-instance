@@ -45,9 +45,3 @@ variable "root_block_device_encrypted" {
 variable "tags" {
   
 }
-variable "environment" {
-  
-}
-variable "app" {
-  
-}
