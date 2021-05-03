@@ -17,8 +17,8 @@ resource "aws_instance" "default" {
     volume_size           = var.root_volume_size
     delete_on_termination = var.delete_on_termination
     encrypted             = var.root_block_device_encrypted
-    tags = merge({Name = var.name}, {org-app = var.app}, var.tags)
+    tags = var.tags
   }
 
-  tags = merge({Name = var.name}, {org-app = var.app}, var.tags)
+  tags = var.tags
 }
