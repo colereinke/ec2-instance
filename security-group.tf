@@ -17,7 +17,7 @@ locals {
 }
 
 resource "aws_security_group" "default" {
-  name  = "${var.app}-${var.environment}"
+  name  = "munki-reports-ec2-001"
   vpc_id = var.vpc_id
 }
 
