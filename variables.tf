@@ -43,9 +43,4 @@ variable "root_block_device_encrypted" {
   default = true
 }
 variable "tags" {
-  
-}
-
-variable = "user_data{
-  default = ""
 }
