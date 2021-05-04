@@ -9,7 +9,6 @@ resource "aws_instance" "default" {
   key_name                    = var.ssh_key_pair
   subnet_id                   = var.subnet
   monitoring                  = var.detailed_monitoring
-  user_data                   = var.user_data
 
   vpc_security_group_ids = [(var.security_groups != "" ? var.security_groups : aws_security_group.default.id)]
 
